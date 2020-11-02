@@ -1,0 +1,442 @@
+@import "vars"
+@import "fonts"
+
+body 
+	color: $black 
+	font-family: $open-sans
+.container-fluid 
+	width: 86.806vw
+	padding-left: 0
+	padding-right: 0
+h1 
+	font-size: 3.643vw
+	line-height: 4.444vw
+	font-family: $oswald
+h2 
+	font-size: 3.123vw
+	font-family: $oswald
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+h3 
+	font-size: 1.876vw
+	font-weight: 700 
+	margin-bottom: 0
+h4 
+	font-size: 1.251vw
+	font-weight: 700
+	margin-bottom: 0
+p 
+	font-size: 1.042vw
+a:hover 
+	text-decoration: none
+.container-sm
+	width: 74.931vw
+	margin: 0 auto
+
+//start header style
+.header
+	padding-top: 3.019vw
+	padding-bottom: 5.954vw 
+	.container-fluid 
+		display: flex
+		align-items: center
+	h1 
+		padding-left: 7.911vw
+		max-width: 55vw
+.logo 
+	img 
+		width: 20.819vw
+//end header style
+
+//start about 
+.about 
+	padding-bottom: 5.694vw
+	.container-fluid 
+		display: flex
+.circle 
+	stroke: $black
+	transition: all 0.5s
+.icon-bg 
+	fill: $black
+	transition: all 0.5s
+.about-social__icons 
+	a:hover 
+		.icon-bg 
+			fill: #fff 
+		.circle
+			fill: $black
+.about__img
+	img 
+		width: 49.133vw
+		box-shadow: 0.347vw 0.347vw 1.042vw rgba(0, 0, 0, 0.15)
+		border-radius: 0.520vw
+.about__content
+	padding-left: 3.331vw
+.about__title
+	font-weight: 700
+	font-size: 1.874vw
+	line-height: 2.361vw
+	margin-bottom: 1.509vw
+.about__text
+	font-size: 1.041vw
+	line-height: 1.319vw
+	p 
+		margin-bottom: 0
+		margin-bottom: 0
+.about-social
+	a 
+		display: block
+.about-social__title
+	font-family: $oswald 
+	font-weight: 700
+
+	margin-bottom: 0.319vw
+.about-social__icons
+	display: flex 
+	a 
+		margin-right: 2.639vw
+	svg 
+		width: 3.125vw
+.about__items
+	display: flex
+	margin-bottom: 3.475vw
+	margin-top: 3.475vw
+.about__item
+	display: flex 
+	align-items: center
+	margin-right: 3.475vw
+	span 
+		font-size: 1.251vw
+		font-weight: 700
+		margin-right: 0.347vw
+	img 
+		margin-right: 0.695vw
+		height: 2.224vw
+
+.about__item:last-child 
+	margin-right: 0
+.progress-bar
+	background: #5465DA
+
+.progress
+	background: #D8D8D8
+	width: 100%
+	height: 0.903vw
+	border-radius: 0.347vw
+.progress-wrapper
+	width: 34.746vw
+	margin-bottom: 3.475vw
+.progress-header
+	display: flex 
+	justify-content: space-between
+	margin-bottom: 0.625vw
+	align-items: flex-end
+.progress__value
+	font-size: 1.876vw
+	font-weight: 700
+//end about
+
+//start sponsors 
+.sponsors
+	margin-bottom: 5.139vw
+	.container-sm
+		padding-top: 3.264vw
+		padding-bottom: 5.139vw
+		border-top: 2px solid $blue
+		border-bottom: 2px solid $blue
+	h2 
+		margin-bottom: 2.986vw
+.sponsors__logos
+	display: flex 
+	justify-content: center
+	align-items: center
+	a
+		max-width: 30% 
+		margin: 0 5%
+		display: flex 
+		justify-content: center
+		img 
+			width: 100%
+	a:nth-child(2)
+		max-width: 50%
+//end sponsors
+
+
+
+//start footer 
+.footer 
+	background: #D8D8D8
+	padding: 0.556vw 0
+	font-size: 0.833vw
+	font-weight: 700
+	a 
+		color: $black
+
+	img 
+		width: 5.465vw
+	.container-sm 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+.footer__right,
+.footer__left 
+	display: flex 
+	align-items: center
+.copy 
+	margin-left: 1.458vw
+.footer__right
+	a 
+		margin-left: 6.458vw
+//end footer
+
+//start tabs section 
+.tabs-section 
+	padding-bottom: 4.864vw
+.tab-item
+	display: none
+.tab-item:first-child
+	display: block
+.tabs
+	display: flex 
+	justify-content: center
+	margin-bottom: 4.864vw
+.tab 
+	cursor: pointer 
+	margin-right: 5.212vw
+	font-size: 1.876vw
+	font-weight: 700
+	text-transform: uppercase
+	position: relative
+.tab:last-child 
+	margin-right: 0
+.tab:after
+	content: ''
+	width: 0
+	height: 0.347vw 
+	background: #FFA300
+	left: 0 
+	bottom: 0
+	display: block
+	transition: all .5s
+	border-radius: 0.139vw
+.tab.active:after
+	width: 100%
+.campaging
+	width: 73.037vw
+	margin: 0 auto
+	display: flex 
+	justify-content: space-between
+.campaging__content
+	width: 48.645vw
+	h3 
+		margin-bottom: 1.390vw
+	img 
+		width: 100%
+		margin: 2.085vw 0
+	p 
+		margin-bottom: 0
+	p.text 
+		margin-bottom: 2.085vw
+.campaging__support
+	width: 20.917vw
+.support__item 
+	margin-top: 1.390vw
+	box-shadow: 0.347vw 0.347vw 1.042vw rgba(0, 0, 0, 0.15)
+	border-radius: 0.347vw
+	padding: 1.390vw
+	h4 
+		margin-bottom: 1.042vw
+.support__price
+	color: #5465DA
+	margin-bottom: 1.042vw
+.support__footer
+	padding-bottom: 1.112vw
+	span 
+		font-weight: 600
+.goals 
+	width: 60.737vw
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+.goal-line
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 10.007vw
+	margin-top: 5vw
+.goal__progress	
+	position: relative
+	height: 11.536vw
+	width: 0.486vw
+	margin-top: 0.695vw
+	margin-bottom: 1.1vw
+	.progress
+		transform: rotate(90deg) translateX(50%) translateY(5.5vw) 
+		height: 0.486vw
+		width: 11.536vw
+.goal-circle
+	height: 10.007vw
+	width: 10.007vw
+	border-radius: 50%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	background: #FFA300
+	color: #fff
+.goal-circle--no-active
+	background: #D8D8D8
+.goals__contant
+	width: 47.186vw
+.goals__item
+	width: 100%
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15)
+	display: flex 
+	justify-content: space-between
+	height: 19.458vw
+	border-radius: 0.347vw
+	margin-bottom: 3.475vw
+	img 
+		width: 19.458vw
+		min-width: 19.458vw
+.goal__item-content
+	padding: 1.390vw
+.goal__item-header
+	display: flex 
+	align-items: center
+	p 
+		margin-bottom: 0
+	h4 
+		color: #5465DA
+		margin-right: 0.347vw
+.goal__item-content
+	h3 
+		margin-bottom: 0.5vw
+		margin-top: 0.5vw
+	p 
+		line-height: 1.35
+.support__item
+	position: relative
+	overflow: hidden
+.support__item-hover
+	position: absolute 
+	top: 0 
+	left: 0
+	background: rgba(#FFA300, 0.9)
+	width: 100% 
+	height: 100%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	opacity: 0
+	transition: all 0.5s
+	cursor: pointer
+	a 
+		color: #fff
+
+.support__item:hover .support__item-hover
+	opacity: 1
+.comment 
+	width: 54.274vw
+	margin: 0 auto
+.comment-header
+	width: 100%
+	border: 1px solid #D8D8D8
+	border-radius: 0.347vw
+	padding: 0.834vw
+	display: flex 
+	justify-content: center 
+	align-items: center
+	margin-bottom: 1.390vw
+	p 
+		margin-bottom: 0
+	a 
+		color: #FFA300
+		font-size: 1.251vw
+		font-weight: 700
+		margin-left: 0.2vw
+.comment-list
+	border: 1px solid #D8D8D8
+	border-radius: 0.347vw
+.comment-item
+	padding: 1.042vw 1.390vw
+	border-bottom: 1px solid #D8D8D8
+	p 
+		margin: 1.042vw 0
+.comment-item:last-child 
+	border-bottom: none
+.comment-item__header
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+.commen-btn
+	height: 2.502vw
+	width: 2.502vw
+	border: 1px solid #D8D8D8
+	border-radius: 0.347vw
+	display: flex 
+	justify-content: center 
+	align-items: center
+	transition: all 0.5s
+	svg 
+		fill: #FFA300
+		width: 1.042vw
+.commen-btn:hover 
+	background: #FFA300
+	border: 1px solid #FFA300
+	svg 
+		fill: #D8D8D8
+.comment-item__user-info
+	display: flex 
+	align-items: center
+	img 
+		width: 3.336vw
+		margin-right: 1.042vw
+.user-name
+	color: #5465DA
+	margin-bottom: 0.417vw
+.comment-item__user-info
+	img.answer-photo
+		width: 2.502vw 
+.user-name
+	display: flex 
+	align-items: center
+	.owner 
+		margin-left: 1.042vw
+		background: #5465DA
+		color: #fff
+		padding: 0.139vw 0.486vw
+		border-radius: 0.278vw
+		margin-bottom: 0
+		margin-top: 0
+.comment-header--login
+	justify-content: flex-start
+	align-items: center
+	img 
+		width: 1.946vw
+	input[type="submit"]
+		background: url('../img/send.svg')
+		border: none
+		background-size: 1.181vw
+		width: 1.181vw
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		margin-bottom: 0
+	form 
+		display: flex 
+		align-items: center
+	input[type="text"]
+		width: 49vw
+		border: none
+		padding-left: 1.042vw
+		outline: none
+		font-size: 1.042vw
+
+
+
+//end tabs section
+@import "media"
+
+
+
